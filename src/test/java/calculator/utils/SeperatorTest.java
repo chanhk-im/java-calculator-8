@@ -1,5 +1,8 @@
 package calculator.utils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +12,7 @@ public class SeperatorTest {
     @Test
     void Seperate_with_one_delimiter() {
         String inputData = "1;2;3";
-        char[] delimiter = new char[]{';'};
+        List<Character> delimiter = Arrays.asList(';');
 
         int[] result = seperator.seperate(delimiter, inputData);
 
@@ -19,7 +22,7 @@ public class SeperatorTest {
     @Test
     void Seperate_with_two_delimiters() {
         String inputData = "1,2:3!4";
-        char[] delimiter = new char[]{',', ':'};
+        List<Character> delimiter = Arrays.asList(',', ':');
 
         int[] result = seperator.seperate(delimiter, inputData);
 
