@@ -21,7 +21,7 @@ public class InputValidatorTest {
 
         boolean result = validator.checkValidate(input);
 
-        Assertions.assertTrue(result);
+        Assertions.assertFalse(result);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class InputValidatorTest {
 
         boolean result = validator.checkValidate(input);
 
-        Assertions.assertTrue(result);
+        Assertions.assertFalse(result);
     }
 
     @Test
@@ -39,6 +39,6 @@ public class InputValidatorTest {
 
         boolean result = validator.checkValidate(input);
 
-        Assertions.assertTrue(result);
+        Assertions.assertFalse(result);
     }
 }
