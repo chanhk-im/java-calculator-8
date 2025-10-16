@@ -33,6 +33,10 @@
     - [ ] 입력받은 데이터를 반환하는 기능
 - `InputValidator`
     - [ ] 문자열을 받아 유효한 데이터인지 검증
+    - [ ] 아래의 경우 잘못된 값으로 취급
+        - 숫자가 delimiter로 설정된 경우
+        - delimiter 문법이 잘못된 경우(//가 있는데 개행이 없는 경우)
+        - delimiter로 설정된 문자 외의 것이 문자열에 있는 경우
     - [ ] 그 결과를 `Boolean`으로 반환
 - `InputParser`
     - [ ] 문자열 데이터의 Delimiter를 확인
