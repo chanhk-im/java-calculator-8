@@ -8,7 +8,7 @@ public class InputValidatorTest {
 
     @Test
     void Validate_successful() {
-        String input = "//;!@\n1;2!3";
+        String input = "//;!@\\n1;2!3";
 
         boolean result = validator.checkValidate(input);
 
@@ -26,7 +26,7 @@ public class InputValidatorTest {
 
     @Test
     void Validate_number_delimiter_failure() {
-        String input = "//;3!@\n1;2!3";
+        String input = "//;3!@\\n1;2!3";
 
         boolean result = validator.checkValidate(input);
 
@@ -35,7 +35,7 @@ public class InputValidatorTest {
 
     @Test
     void Validate_wrong_delimiter_failure() {
-        String input = "//;!@\n1#2!3";
+        String input = "//;!@\\n1#2!3";
 
         boolean result = validator.checkValidate(input);
 

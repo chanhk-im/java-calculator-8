@@ -16,7 +16,7 @@ public class InputManagerTest {
 
     @Test
     void Input_Manager_input_string_successful() {
-        String input = "//;!@\n1;2!3";
+        String input = "//;!@\\n1;2!3";
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         String result = inputManager.inputString();
@@ -26,7 +26,7 @@ public class InputManagerTest {
 
     @Test
     void Input_Manager_input_string_throws_error() {
-        String input = "//;!@\n1;2,3";
+        String input = "//;!@\\n1;2,3";
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> {

@@ -12,7 +12,7 @@ public class InputParser {
     }
 
     public boolean hasDelimiter(String input) {
-        if (input.charAt(0) == '/' && input.charAt(1) == '/' && input.indexOf('\n') != -1) {
+        if (input.charAt(0) == '/' && input.charAt(1) == '/' && input.contains("\\n")) {
             return true;
         }
 
@@ -21,7 +21,7 @@ public class InputParser {
 
     public int[] parseString(String input) {
         if (hasDelimiter(input)) {
-            int delimiterEndIndex = input.indexOf("\n");
+            int delimiterEndIndex = input.indexOf("\\n");
             List<Character> delimiters = new ArrayList<>();
 
             for (int i = 2; i < delimiterEndIndex; i++) {

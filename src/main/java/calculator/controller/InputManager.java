@@ -12,11 +12,11 @@ public class InputManager {
 
     public String inputString() {
         String input = Console.readLine();
-        if (input.matches("^//\\S+")) {
-            String content = Console.readLine();
-            input += "\n" + content;
-        }
+
+        Console.close();
+
         if (!inputValidator.checkValidate(input)) {
+
             throw new IllegalArgumentException("올바르지 않은 입력입니다.");
         }
 

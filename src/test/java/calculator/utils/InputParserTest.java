@@ -17,7 +17,7 @@ public class InputParserTest {
 
     @Test
     void Parse_input_with_one_delimiter() {
-        String input = "//;\n1;2;3";
+        String input = "//;\\n1;2;3";
 
         int[] result = inputParser.parseString(input);
 
@@ -26,7 +26,7 @@ public class InputParserTest {
 
     @Test
     void Parse_input_with_delimiters() {
-        String input = "//;!@\n1;2!3@4,5";
+        String input = "//;!@\\n1;2!3@4,5";
 
         int[] result = inputParser.parseString(input);
 
