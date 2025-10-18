@@ -1,11 +1,18 @@
 package calculator.controller;
 
+import camp.nextstep.edu.missionutils.Console;
 import java.io.ByteArrayInputStream;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class InputManagerTest {
     private InputManager inputManager = new InputManager();
+
+    @AfterEach
+    public void tearDown() {
+        Console.close();
+    }
 
     @Test
     void Input_Manager_input_string_successful() {
