@@ -12,7 +12,9 @@ public class InputManagerTest {
         String input = "//;!@\n1;2!3";
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
-        Assertions.assertDoesNotThrow(() -> inputManager.inputString());
+        String result = inputManager.inputString();
+
+        Assertions.assertEquals(result, input);
     }
 
     @Test
