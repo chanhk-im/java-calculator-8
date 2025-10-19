@@ -17,8 +17,9 @@
 - `CalculateResult`: 계산 결과 데이터 Domain
 - `CalculatorService`: 계산기에서 실제로 계산하는 로직을 가지는 클래스
 - `CalculatorController`: 계산할 데이터를 받아와 `CalculatorService`에 전달
+-
 
-![java-calculator-8 SD.png](images%2Fjava-calculator-8%20SD.png)
+![java-calculator-8 CD.png](images%2Fjava-calculator-8%20CD.png)
 
 ## ✅ 구현할 기능 목록
 
