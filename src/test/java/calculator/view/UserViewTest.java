@@ -19,7 +19,7 @@ public class UserViewTest {
     @Test
     void UserView_show_input_message() {
         userView.showInputMessage();
-        Assertions.assertEquals("합계를 구할 숫자를 입력하세요.", outputStream.toString().trim());
+        Assertions.assertEquals("덧셈할 문자열을 입력해 주세요.", outputStream.toString().trim());
     }
 
     @Test

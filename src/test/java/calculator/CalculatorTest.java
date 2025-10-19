@@ -19,7 +19,7 @@ public class CalculatorTest {
     @Test
     void Calculator_run_successful() {
         String input = "//;!@\\n1;2!3";
-        String expected = "합계를 구할 숫자를 입력하세요.\n결과 : 6";
+        String expected = "덧셈할 문자열을 입력해 주세요.\n결과 : 6";
 
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
